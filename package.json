@@ -17,9 +17,17 @@
   "author": "xxmyyds",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
     "@xxm7/eslint-config-vue": "^2.0.7",
     "bumpp": "^8.2.1",
     "eslint": "^8.25.0",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
