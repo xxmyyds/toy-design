@@ -1,6 +1,5 @@
 name: Release
 
-# 当代码合并到master分支的时候，执行下列脚本
 on:
   push:
     tags:
@@ -34,17 +33,17 @@ jobs:
         id: version
         uses: ashley-taylor/read-json-property-action@v1.0
         with:
-          path: ./package.json
+          path: ./packages/toy-design/package.json
           property: version
 
-      - name: 发布NPM包
-        # 执行发布代码
-        run: |
-          npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
-          npm publish
-        env:
-          # 配置 npm access token 环境变量
-          NPM_TOKEN: ${{secrets.NPM_ACCESS_TOKEN}}
+      # - name: 发布NPM包
+      #   # 执行发布代码
+      #   run: |
+      #     npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
+      #     npm publish
+      #   env:
+      #     # 配置 npm access token 环境变量
+      #     NPM_TOKEN: ${{secrets.NPM_ACCESS_TOKEN}}
 
       # 创建GitHub Release
       - name: 创建GitHub Release

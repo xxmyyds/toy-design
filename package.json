@@ -6,7 +6,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "release": "bumpp package.json"
+    "release": "bumpp ./packages/toy-design/package.json"
   },
   "keywords": [
     "design",
