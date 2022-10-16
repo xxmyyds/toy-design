@@ -1,0 +1,3 @@
+{
+  "extends": "@xxm7/eslint-config-ts"
+}
