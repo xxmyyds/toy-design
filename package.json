@@ -16,7 +16,8 @@
   "scripts": {
     "release": "bumpp ./packages/toy-design/package.json",
     "commit": "git cz",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "lint-staged": {
     "*.{vue,js,ts,jsx,tsx,md,json}": "eslint --fix"
