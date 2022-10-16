@@ -6,7 +6,9 @@
   },
   "main": "index.js",
   "scripts": {
-    "release": "bumpp ./packages/toy-design/package.json"
+    "release": "bumpp ./packages/toy-design/package.json",
+    "commit": "git cz",
+    "prepare": "husky install"
   },
   "keywords": [
     "design",
@@ -21,13 +23,18 @@
     "@commitlint/config-conventional": "^17.1.0",
     "@xxm7/eslint-config-vue": "^2.0.7",
     "bumpp": "^8.2.1",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.25.0",
-    "typescript": "^4.8.4",
-    "cz-conventional-changelog": "^3.3.0"
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "typescript": "^4.8.4"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx,md,json}": "eslint --fix"
   }
 }
