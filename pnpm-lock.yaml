@@ -34,7 +34,10 @@ importers:
       vitest: 0.24.3
 
   packages/toy-components:
-    specifiers: {}
+    specifiers:
+      '@toy-design/toy-tools': workspace:^0.0.1
+    dependencies:
+      '@toy-design/toy-tools': link:../toy-tools
 
   packages/toy-design:
     specifiers: {}

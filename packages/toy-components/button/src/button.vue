@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button>click</button>
+    <button>my-button</button>
   </div>
 </template>
 
