@@ -1,5 +1,9 @@
 <template>
-  <div class="">123</div>
+  <div class="">
+    123
+    <t-button></t-button>
+    <t-input></t-input>
+  </div>
 </template>
 
 <script setup lang="ts">

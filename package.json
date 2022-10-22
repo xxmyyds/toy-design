@@ -31,7 +31,7 @@
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@vitejs/plugin-vue": "^3.1.2",
-    "@xxm7/eslint-config-vue": "^2.0.7",
+    "@xxm7/eslint-config-vue": "^2.0.10",
     "bumpp": "^8.2.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.25.0",
