@@ -2,7 +2,7 @@
 
 set -e
 
-pnpm i 
+pnpm i --no-frozen-lockfile
 
 pnpm build
 
