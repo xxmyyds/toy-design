@@ -1,14 +1,31 @@
 {
   "name": "toy-design",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "",
-  "keywords": [],
+  "keywords": [
+    "toy-design",
+    "vue",
+    "components",
+    "ui",
+    "vite",
+    "typescript"
+  ],
   "license": "MIT",
-  "author": "",
-  "main": "index.js",
-  "scripts": {},
+  "repository": "https://github.com/xxmyyds/toy-design",
+  "author": "xxmyyds",
+  "exports": {
+    ".": {
+      "import": "./es/index.js"
+    }
+  },
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
   "dependencies": {
     "@toy-design/toy-components": "workspace:*",
     "@toy-design/toy-tools": "workspace:*"
+  },
+  "bugs": {
+    "url": "https://github.com/xxmyyds/toy-design/issues"
   }
 }
