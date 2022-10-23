@@ -45,6 +45,8 @@ jobs:
         env:
           # 配置 npm access token 环境变量
           NPM_TOKEN: ${{secrets.NPM_ACCESS_TOKEN}}
+          REGISTRY: https://registry.npmjs.com/
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # 创建GitHub Release
       - name: 创建GitHub Release
