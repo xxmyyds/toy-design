@@ -1,4 +1,5 @@
 {
+  "name": "toy-design",
   "packageManager": "pnpm@7.12.1",
   "private": "true",
   "engines": {
@@ -13,6 +14,8 @@
   "author": "xxmyyds",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf dist",
+    "build": "pnpm clean && vite build",
     "release": "bumpp ./packages/toy-design/package.json",
     "commit": "git cz",
     "prepare": "husky install",
@@ -36,8 +39,10 @@
     "eslint": "^8.25.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
+    "rimraf": "^3.0.2",
     "typescript": "^4.8.4",
     "vite": "^3.1.8",
+    "vite-plugin-dts": "^1.6.6",
     "vitest": "^0.24.3"
   },
   "config": {

@@ -1,4 +1,4 @@
-import toyDesign from './components'
+import ToyDesign from './components'
 
 export * from '@toy-design/toy-components'
-export default toyDesign
+export default ToyDesign
