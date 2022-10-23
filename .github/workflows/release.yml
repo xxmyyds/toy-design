@@ -33,15 +33,12 @@ jobs:
         id: version
         uses: ashley-taylor/read-json-property-action@v1.0
         with:
-          path: ./dist/package.json
+          path: ./packages/toy-design/package.json
           property: version
 
       - name: 发布NPM包
         # 执行发布代码
-        run: |
-          cd dist
-          npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
-          npm publish
+        run: sh ./scripts/publish.sh
         env:
           # 配置 npm access token 环境变量
           NPM_TOKEN: ${{secrets.NPM_ACCESS_TOKEN}}
