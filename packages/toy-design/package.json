@@ -3,6 +3,7 @@
   "version": "0.0.6",
   "description": "",
   "keywords": [],
+  "license": "MIT",
   "author": "",
   "main": "index.js",
   "scripts": {},

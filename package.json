@@ -10,7 +10,6 @@
     "vue",
     "framework"
   ],
-  "license": "MIT",
   "author": "xxmyyds",
   "main": "index.js",
   "scripts": {
