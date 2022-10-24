@@ -39,9 +39,19 @@ jobs:
           path: ./packages/toy-design/package.json
           property: version
 
-      - name: 发布NPM包
+      - name: 安装依赖
         # 执行发布代码
-        run: sh ./scripts/publish.sh
+        run: |
+          pnpm i
+
+      - name: 构建
+        run: |
+          pnpm build
+
+      - name: 发布到npm
+        run: |
+          cd dist
+          npm publish
         env:
           # 配置 npm access token 环境变量
           NODE_AUTH_TOKEN: ${{secrets.NPM_ACCESS_TOKEN}}
