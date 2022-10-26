@@ -39,14 +39,14 @@ importers:
 
   packages/toy-components:
     specifiers:
-      '@toy-design/toy-tools': workspace:^0.0.1
+      '@toy-design/toy-tools': workspace:*
     dependencies:
       '@toy-design/toy-tools': link:../toy-tools
 
   packages/toy-design:
     specifiers:
       '@toy-design/toy-components': workspace:*
-      '@toy-design/toy-tools': workspace:^0.0.1
+      '@toy-design/toy-tools': workspace:*
     dependencies:
       '@toy-design/toy-components': link:../toy-components
       '@toy-design/toy-tools': link:../toy-tools
@@ -54,9 +54,12 @@ importers:
   packages/toy-theme:
     specifiers: {}
 
+  packages/toy-tools:
+    specifiers: {}
+
   play:
     specifiers:
-      toy-design: workspace:^0.0.5
+      toy-design: workspace:*
     dependencies:
       toy-design: link:../packages/toy-design
 
