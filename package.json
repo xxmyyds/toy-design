@@ -14,6 +14,7 @@
   "author": "xxmyyds",
   "main": "index.js",
   "scripts": {
+    "publish": "sh ./scripts/publish.sh",
     "clean": "rimraf dist",
     "build": "pnpm clean && vite build",
     "release": "bumpp ./packages/toy-design/package.json",
