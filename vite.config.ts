@@ -3,6 +3,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import dts from 'vite-plugin-dts'
 import { move } from './scripts/move'
+import { normalize } from './scripts/normalize'
 
 export default defineConfig({
   plugins: [
@@ -20,6 +21,7 @@ export default defineConfig({
       // 构建后回调钩子
       afterBuild: (): void => {
         move()
+        normalize()
       },
     }),
   ],

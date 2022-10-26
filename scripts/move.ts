@@ -1,5 +1,4 @@
 import { copyFileSync } from 'fs'
-import { version } from '../packages/toy-design/package.json'
 
 export function move() {
   const files = [
@@ -14,6 +13,4 @@ export function move() {
   files.forEach((item): void => {
     copyFileSync(item.entry, item.outDir)
   })
-
-  console.warn('\n' + `Toy Design ${version} 版本打包成功 🎉🎉🎉` + '\n')
 }
