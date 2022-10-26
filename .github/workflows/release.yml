@@ -46,7 +46,7 @@ jobs:
       - name: 安装依赖
         # 执行发布代码
         run: |
-          pnpm i
+          pnpm i --no-frozen-lockfile
 
       - name: 构建
         run: |
