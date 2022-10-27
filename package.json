@@ -22,7 +22,8 @@
     "prepare": "husky install",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "test": "vitest",
-    "play": "pnpm -C play dev"
+    "play": "pnpm -C play dev",
+    "docs:dev": "pnpm -C docs dev"
   },
   "lint-staged": {
     "*.{vue,js,ts,jsx,tsx,md,json}": "eslint --fix"

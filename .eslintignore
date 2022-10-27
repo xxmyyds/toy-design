@@ -2,7 +2,7 @@ node_modules
 dist
 pnpm-lock.yaml
 CHANGELOG.md
-docs/components.d.ts
+docs
 coverage
 play
 ssr-testing/cases/*
