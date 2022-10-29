@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "ES2016" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
     "module": "ESNext" /* Specify what module code is generated. */,
     "moduleResolution": "node" /* Specify how TypeScript looks up a file from a given module specifier. */,
@@ -9,7 +10,8 @@
     "strict": true /* Enable all strict type-checking options. */,
     "skipLibCheck": true,
     "paths": {
-      "@toy-design/*": ["./packages/*"]
+      "@toy-design/*": ["./packages/*"],
+      "@dist/*": ["./dist/*"]
     }
   },
   "include": ["packages", "play"]

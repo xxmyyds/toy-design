@@ -6,6 +6,6 @@ import App from './App.vue'
 // import ToyDesign from 'toy-design'
 
 // 打包阶段引入
-import ToyDesign from '../../dist/es'
+import ToyDesign from '@dist/es'
 
 createApp(App).use(ToyDesign).mount('#play')
