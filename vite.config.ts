@@ -2,6 +2,7 @@ import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import dts from 'vite-plugin-dts'
+import vueSetupExtend from 'unplugin-vue-setup-extend-plus/vite'
 import { move } from './scripts/move'
 import { normalize } from './scripts/normalize'
 
@@ -24,6 +25,7 @@ export default defineConfig({
         normalize()
       },
     }),
+    vueSetupExtend(),
   ],
   build: {
     target: 'modules', // 这是指 支持原生 ES 模块、原生 ESM 动态导入
