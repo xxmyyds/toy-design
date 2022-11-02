@@ -34,7 +34,7 @@ export default defineConfig({
     //     link: 'https://github.com/FightingDesign/fighting-design',
     //   },
     // ],
-    logo: 'https://xxmyyds-images.oss-cn-hongkong.aliyuncs.com/logo.jpeg?Expires=1667314836&OSSAccessKeyId=TMP.3KjyhCT3ox1H4P3dVfHxs5vb8nZaqrFMbYL25snPVEkscjvLd3wDvqRc8htukZmMq6VVfHyL3UrphF2FiDUnFz54VBYHAg&Signature=Sqk1KsFdeJxpeFc3p6WJnw7ucMY%3D',
+    logo: '/images/logo.jpeg',
   },
   //   markdown: {
   //     config: (md) => mdPlugin(md),
