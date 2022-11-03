@@ -1,15 +1,11 @@
 <template>
-  <div>
-    <button>my-button</button>
-  </div>
+  <button :class="[ns.m(props.type)]">my-button</button>
 </template>
 
-<script lang="ts">
-export default {
-  name: 'TButton',
-}
-</script>
+<script setup name="TButton" lang="ts">
+import { useNamespace } from '@toy-design/toy-tools'
+import { buttonProps } from './button'
+const props = defineProps(buttonProps)
 
-<script setup lang="ts">
-// import { props } from './button'
+const ns = useNamespace('button')
 </script>
