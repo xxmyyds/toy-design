@@ -68,10 +68,7 @@ importers:
     specifiers: {}
 
   play:
-    specifiers:
-      toy-design: workspace:*
-    dependencies:
-      toy-design: link:../packages/toy-design
+    specifiers: {}
 
 packages:
 
