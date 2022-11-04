@@ -32,6 +32,7 @@ export default defineConfig({
     minify: true, // 压缩代码
     chunkSizeWarningLimit: 2, // 打包的组件超过 2kb 警告提示
     reportCompressedSize: true, // 启用 gzip 压缩大小报告
+    emptyOutDir: false,
     lib: {
       entry: resolve(__dirname, 'packages/toy-design/index.ts'), // 打包入口
       name: 'ToyDesign',

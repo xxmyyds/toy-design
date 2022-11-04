@@ -16,7 +16,8 @@
   "scripts": {
     "publish:npm": "sh ./scripts/publish.sh",
     "clean": "rimraf dist",
-    "build": "pnpm clean && vite build",
+    "build": "pnpm clean && pnpm build:css && vite build",
+    "build:css": "vite build --config vite.config.css.ts",
     "release": "bumpp ./packages/toy-design/package.json",
     "commit": "git cz",
     "prepare": "husky install",
