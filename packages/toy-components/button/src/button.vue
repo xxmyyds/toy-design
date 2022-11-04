@@ -1,5 +1,5 @@
 <template>
-  <button :class="[ns.m(props.type)]">my-button</button>
+  <button :class="[ns.b(), ns.m(props.type)]">my-button</button>
 </template>
 
 <script setup name="TButton" lang="ts">

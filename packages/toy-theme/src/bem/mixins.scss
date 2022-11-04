@@ -1,0 +1,30 @@
+@use '../common/config.scss' as *;
+
+// BEM
+@mixin b($block) {
+  $B: $namespace + $block-separator + $block !global;
+
+  .#{$B} {
+    @content;
+  }
+}
+
+@mixin e($element) {
+  $E: $element !global;
+
+  @at-root {
+    .#{$B + $element-separator + $E} {
+      @content;
+    }
+  }
+}
+
+@mixin m($modifier) {
+  $M: $modifier !global;
+
+  @at-root {
+    .#{$B + $modifier-separator + $M} {
+      @content;
+    }
+  }
+}

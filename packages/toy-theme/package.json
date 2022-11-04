@@ -3,6 +3,6 @@
   "version": "0.0.1",
   "description": "",
   "keywords": [],
-  "main": "index.js",
+  "main": "src/index.scss",
   "scripts": {}
 }
