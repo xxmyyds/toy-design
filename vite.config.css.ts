@@ -8,7 +8,7 @@ export default defineConfig({
     rollupOptions: {
       input: resolve(__dirname, 'packages/toy-theme/src/index.scss'),
       output: {
-        assetFileNames: '[name].[ext]', // 取消文件名 hash 值 https://rollupjs.org/guide/en/#outputassetfilenames
+        assetFileNames: '[name].[ext]', // https://rollupjs.org/guide/en/#outputassetfilenames
       },
     },
   },
