@@ -1,0 +1,9 @@
+@use '../common/genVar.scss' as *;
+@use '../common/var.scss' as *;
+
+// common
+:root {
+  @each $type in (primary, success, warning, danger, error, info) {
+    @include set-css-color-type($colors, $type);
+  }
+}
