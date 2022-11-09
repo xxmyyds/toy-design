@@ -1,13 +1,12 @@
 <template>
   <div class="">
-    123
-    <t-button type="default"></t-button>
-    <t-button type="primary"></t-button>
-    <t-button type="success"></t-button>
-    <t-button type="danger"></t-button>
-    <t-button type="info"></t-button>
-    <t-button type="warning"></t-button>
-    <t-input></t-input>
+    按钮
+    <toy-button type="default"></toy-button>
+    <toy-button type="primary"></toy-button>
+    <toy-button type="success"></toy-button>
+    <toy-button type="danger"></toy-button>
+    <toy-button type="info"></toy-button>
+    <toy-button type="warning"></toy-button>
   </div>
 </template>
 

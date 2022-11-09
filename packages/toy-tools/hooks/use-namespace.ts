@@ -1,6 +1,6 @@
 import { ref } from 'vue'
 
-export const namespace = ref('t')
+export const namespace = ref('toy')
 const statePrefix = 'is-'
 
 const _bem = (

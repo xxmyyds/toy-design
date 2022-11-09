@@ -4,13 +4,8 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup name="ToyInput" lang="ts">
 // import {} from 'vue'
 </script>
 
-<script lang="ts">
-export default {
-  name: 'TInput',
-}
-</script>
 <style scoped lang="scss"></style>

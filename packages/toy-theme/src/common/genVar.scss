@@ -29,3 +29,9 @@
 @mixin set-css-color-type($colors, $type) {
   @include set-css-var-value(('color', $type), map.get($colors, $type, 'base'));
 }
+
+@mixin set-css-color($name, $colors) {
+  @each $key in map.keys($colors) {
+    #{joinVarName(($name,$key))}: #{map.get($colors, $key)};
+  }
+}

@@ -1,0 +1,9 @@
+// @forward '../../packages/toy-theme/src/common/var.scss'
+//   with(
+//     $colors: (
+//       'primary': (
+//         'base': green,
+//       ),
+//     )
+//   );
+@use '../../packages/toy-theme/src/index.scss';

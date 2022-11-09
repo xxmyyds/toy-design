@@ -1,6 +1,10 @@
 @use './bem/mixins.scss' as *;
 @use './common/genVar.scss' as *;
 
+// @include b('button') {
+//   @include set-component-css-default-var('button');
+// }
+
 @include b('button') {
   display: inline-block;
   justify-content: center;
@@ -19,7 +23,7 @@
   user-select: none;
   vertical-align: middle;
   -webkit-appearance: none;
-  background-color: getCssVar('color', 'default');
+  background-color: getCssVar('button', 'bg-color');
   border: 1px solid royalblue;
   border-color: #333;
 
@@ -29,7 +33,7 @@
 
   @each $type in (primary, success, warning, danger, info) {
     @include m($type) {
-      background-color: getCssVar('color', $type);
+      #{joinVarName(('button','bg-color'))}: #{getCssVar('color', $type)};
     }
   }
 }
