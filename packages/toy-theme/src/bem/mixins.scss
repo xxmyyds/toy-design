@@ -10,21 +10,33 @@
 }
 
 @mixin e($element) {
-  $E: $element !global;
+  $E: $element;
 
   @at-root {
-    .#{$B + $element-separator + $E} {
-      @content;
+    @if $E == '' {
+      .#{$B} {
+        @content;
+      }
+    } @else {
+      .#{$B + $element-separator + $E} {
+        @content;
+      }
     }
   }
 }
 
 @mixin m($modifier) {
-  $M: $modifier !global;
+  $M: $modifier;
 
   @at-root {
-    .#{$B + $modifier-separator + $M} {
-      @content;
+    @if $M == '' {
+      .#{$B} {
+        @content;
+      }
+    } @else {
+      .#{$B + $modifier-separator + $M} {
+        @content;
+      }
     }
   }
 }

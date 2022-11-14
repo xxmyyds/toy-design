@@ -30,8 +30,13 @@
   @include set-css-var-value(('color', $type), map.get($colors, $type, 'base'));
 }
 
-@mixin set-css-color($name, $colors) {
+// .toy-button--primary{
+//      --toy-button-bg-color-primary:#409eff
+//      --toy-button-text-color-primary:#ffffff
+//}
+
+@mixin set-component-css-by-color-map($name, $colors) {
   @each $key in map.keys($colors) {
-    #{joinVarName(($name,$key))}: #{map.get($colors, $key)};
+    #{joinVarName(($name, $key))}: #{map.get($colors, $key)};
   }
 }

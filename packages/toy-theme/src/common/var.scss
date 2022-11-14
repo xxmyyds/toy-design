@@ -32,7 +32,7 @@ $colors: map.deep-merge(
 $button-bg-color: () !default;
 $button-bg-color: map.deep-merge(
   (
-    'default': #ffffff,
+    '': #ffffff,
     'primary': #409eff,
     'success': #67c23a,
     'warning': #e6a23c,
@@ -44,4 +44,3 @@ $button-bg-color: map.deep-merge(
 );
 
 $button: () !default;
-@debug list.append($button-bg-color, '20px');
