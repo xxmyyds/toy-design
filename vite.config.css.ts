@@ -6,7 +6,7 @@ export default defineConfig({
     outDir: resolve(__dirname, 'dist/dist'),
     emptyOutDir: false,
     rollupOptions: {
-      input: resolve(__dirname, 'packages/toy-theme/src/index.scss'),
+      input: resolve(__dirname, 'packages/toy-theme/index.scss'),
       output: {
         assetFileNames: '[name].[ext]', // https://rollupjs.org/guide/en/#outputassetfilenames
       },
