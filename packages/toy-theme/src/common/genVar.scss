@@ -40,3 +40,18 @@
     #{joinVarName(($name, $key))}: #{map.get($colors, $key)};
   }
 }
+
+@mixin set-component-css-var($name, $variables) {
+  @each $key in map.keys($variables) {
+    #{getCssVarName($name, $key)}: #{map.get($variables, $key)};
+  }
+}
+
+@function map-collect($maps...) {
+  $collection: ();
+
+  @each $map in $maps {
+    $collection: map-merge($collection, $map);
+  }
+  @return $collection;
+}
