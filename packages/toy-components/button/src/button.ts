@@ -4,4 +4,5 @@ export const buttonProps = {
     default: '',
   },
   disabled: Boolean,
+  plain: Boolean,
 }

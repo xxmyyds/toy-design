@@ -17,6 +17,15 @@
     <toy-button disabled type="info">info</toy-button>
     <toy-button disabled type="warning">warning</toy-button>
   </div>
+  <div style="margin: 10px 0">
+    plain
+    <toy-button plain>default</toy-button>
+    <toy-button type="primary" :plain="true">primary</toy-button>
+    <toy-button plain type="success">success</toy-button>
+    <toy-button plain type="danger">danger</toy-button>
+    <toy-button plain type="info">info</toy-button>
+    <toy-button plain type="warning">warning</toy-button>
+  </div>
 </template>
 
 <script setup lang="ts">

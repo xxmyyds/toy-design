@@ -24,13 +24,12 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 // 组件按需引入
-import { TButton, TInput } from 'toy-design'
+import { ToyButton, ToyInput } from 'toy-design'
 
-// 样式按需引入
-import 'toy-design/theme/button.css'
-import 'toy-design/theme/card.css'
+// 样式引入
+import 'toy-design/dist/index.css'
 
-createApp(App).use(TButton).use(TInput).mount('#app')
+createApp(App).use(ToyButton).use(ToyInput).mount('#app')
 ```
 
 

@@ -1,6 +1,11 @@
 <template>
   <button
-    :class="[ns.b(), ns.m(props.type), ns.is('disabled', props.disabled)]"
+    :class="[
+      ns.b(),
+      ns.m(props.type),
+      ns.is('disabled', props.disabled),
+      ns.is('plain', props.plain),
+    ]"
     :disabled="props.disabled"
   >
     <slot></slot>
