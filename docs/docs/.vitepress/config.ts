@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 import { nav } from './utils/nav'
 import { sidebar } from './utils/sidebar'
 import { description } from './utils/description'
+import { mdPlugin } from './config/plugin'
 
 export default defineConfig({
   title: 'Toy Design',
@@ -36,7 +37,9 @@ export default defineConfig({
     // ],
     logo: 'http://1.15.149.176/images/avatar.jpeg',
   },
-  //   markdown: {
-  //     config: (md) => mdPlugin(md),
-  //   },
+  markdown: {
+    config: (md) => {
+      mdPlugin(md)
+    },
+  },
 })

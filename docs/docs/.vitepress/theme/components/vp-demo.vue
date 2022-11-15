@@ -1,12 +1,124 @@
+<script lang="ts" setup>
+import { ref, unref } from 'vue'
+
+const prop = defineProps({
+  open: {
+    type: Boolean,
+    default: (): boolean => false,
+  },
+})
+
+// 是否展示内容
+const isOpen = ref<boolean>(prop.open)
+
+/**
+ * 点击
+ */
+const handleClick = (): void => {
+  isOpen.value = !unref(isOpen)
+}
+</script>
+
 <template>
   <div class="vp-demo">
-    <h1>vp-demo</h1>
-    <slot></slot>
+    <div v-if="$slots.example" class="vp-demo__example">
+      <slot name="example" />
+    </div>
+
+    <div :class="['vp-demo__box', { 'vp-demo__box-open': isOpen }]">
+      <div class="vp-demo__source">
+        <slot />
+      </div>
+    </div>
+    <div
+      :class="['vp-demo__option', { 'vp-demo__option-open': isOpen }]"
+      @click.self="handleClick"
+    >
+      <span class="vp-demo__option-text" @click.self="handleClick">
+        {{ isOpen ? '折叠代码' : '展开代码' }}
+      </span>
+    </div>
   </div>
 </template>
 
-<script setup>
-import {} from 'vue'
-</script>
+<style lang="scss" scoped>
+.vp-demo {
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  transition: 0.3s;
 
-<style scoped lang="scss"></style>
+  &:hover {
+    box-shadow: 0 0 8px 0 #e8edfa99, 0 2px 4px 0 #e8edfa80;
+  }
+
+  &__example {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  // 内容盒子
+  &__box {
+    box-sizing: border-box;
+    height: fit-content;
+    transition: max-height 0.4s;
+    max-height: 0;
+    overflow: hidden;
+    background: #fff;
+
+    &.vp-demo__box-open {
+      border-top: 1px solid #e5e5e5;
+      overflow-y: auto;
+      max-height: 800px;
+    }
+
+    // 源码
+    .vp-demo__source {
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    // 滚动条
+    &::-webkit-scrollbar {
+      width: 7px;
+    }
+
+    // 滚动滑块
+    &::-webkit-scrollbar-thumb {
+      background: #ddd;
+      border-radius: 6px;
+    }
+  }
+
+  // 操作栏
+  &__option {
+    border-top: 1px solid #e5e5e5;
+    height: 45px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    user-select: none;
+    font-size: 15px;
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 9999;
+
+    &.vp-demo__option-open {
+      position: sticky;
+      bottom: 0px;
+    }
+
+    &__option-text {
+      color: #333;
+      transition: 0.4s;
+    }
+
+    &:hover {
+      .vp-demo__option-text {
+        color: #2d5af1;
+      }
+    }
+  }
+}
+</style>
