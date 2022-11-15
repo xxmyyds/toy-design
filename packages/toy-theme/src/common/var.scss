@@ -1,60 +1,6 @@
 @use 'sass:map';
 @use './genVar.scss' as *;
-
-// Color
-$colors: () !default;
-$colors: map.deep-merge(
-  (
-    'white': #ffffff,
-    'black': #000000,
-    'primary': (
-      'base': #409eff,
-    ),
-    'success': (
-      'base': #67c23a,
-    ),
-    'warning': (
-      'base': #e6a23c,
-    ),
-    'danger': (
-      'base': #f56c6c,
-    ),
-    'error': (
-      'base': #f56c6c,
-    ),
-    'info': (
-      'base': #909399,
-    ),
-  ),
-  $colors
-);
-
-$button-bg-color: () !default;
-$button-bg-color: map.deep-merge(
-  (
-    'primary': #409eff,
-    'success': #67c23a,
-    'warning': #e6a23c,
-    'danger': #f56c6c,
-    'error': #f56c6c,
-    'info': #909399,
-  ),
-  ()
-);
-
-$button-border-color: () !default;
-$button-border-color: map.deep-merge(
-  (
-    '': #dcdfe6,
-    'primary': #409eff,
-    'success': #67c23a,
-    'warning': #e6a23c,
-    'danger': #f56c6c,
-    'error': #f56c6c,
-    'info': #909399,
-  ),
-  ()
-);
+@use './color.scss' as *;
 
 // Button
 $button: () !default;
@@ -63,7 +9,7 @@ $button-default: (
     'border-color': #dcdfe6,
     'bg-color': #ffffff,
     'text-color': #606266,
-    'disabled-text-color': #ffffff,
+    'disabled-text-color': #a8abb2,
     'disabled-bg-color': #ffffff,
     'disabled-border-color': #e4e7ed,
     'hover-text-color': #409eff,

@@ -54,4 +54,15 @@
       @include set-component-css-var('button', map.get($button, $type));
     }
   }
+
+  @include when(disabled) {
+    &,
+    &:hover,
+    &:focus {
+      color: getCssVar('button', 'disabled', 'text-color');
+      cursor: not-allowed;
+      background-color: getCssVar('button', 'disabled', 'bg-color');
+      border-color: getCssVar('button', 'disabled', 'border-color');
+    }
+  }
 }

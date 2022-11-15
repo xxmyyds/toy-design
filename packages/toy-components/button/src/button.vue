@@ -1,5 +1,8 @@
 <template>
-  <button :class="[ns.b(), ns.m(props.type)]">
+  <button
+    :class="[ns.b(), ns.m(props.type), ns.is('disabled', props.disabled)]"
+    :disabled="props.disabled"
+  >
     <slot></slot>
   </button>
 </template>
@@ -8,6 +11,5 @@
 import { useNamespace } from '@toy-design/toy-tools'
 import { buttonProps } from './button'
 const props = defineProps(buttonProps)
-
 const ns = useNamespace('button')
 </script>

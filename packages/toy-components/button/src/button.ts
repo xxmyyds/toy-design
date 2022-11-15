@@ -3,4 +3,5 @@ export const buttonProps = {
     type: String,
     default: '',
   },
+  disabled: Boolean,
 }
