@@ -1,7 +1,7 @@
 <template>
   <div class="">
     按钮
-    <toy-button>default</toy-button>
+    <toy-button ref="btn">default</toy-button>
     <toy-button type="primary">primary</toy-button>
     <toy-button type="success">success</toy-button>
     <toy-button type="danger">danger</toy-button>
@@ -10,7 +10,7 @@
   </div>
   <div style="margin: 10px 0">
     禁止
-    <toy-button :disabled="disabled">default</toy-button>
+    <toy-button disabled>default</toy-button>
     <toy-button disabled type="primary">primary</toy-button>
     <toy-button disabled type="success">success</toy-button>
     <toy-button disabled type="danger">danger</toy-button>
@@ -20,5 +20,10 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { nextTick, onMounted, ref } from 'vue'
+
+const btn = ref(null)
+onMounted(() => {
+  console.log(btn.value)
+})
 </script>

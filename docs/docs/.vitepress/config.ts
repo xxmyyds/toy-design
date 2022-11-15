@@ -34,7 +34,7 @@ export default defineConfig({
     //     link: 'https://github.com/FightingDesign/fighting-design',
     //   },
     // ],
-    logo: '/images/logo.jpeg',
+    logo: 'http://1.15.149.176/images/avatar.jpeg',
   },
   //   markdown: {
   //     config: (md) => mdPlugin(md),

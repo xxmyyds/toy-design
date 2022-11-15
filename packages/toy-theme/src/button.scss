@@ -14,7 +14,7 @@
   align-items: center;
   line-height: 1;
 
-  height: 30px;
+  height: 32px;
   white-space: nowrap;
   cursor: pointer;
   color: getCssVar('button', 'text-color');
@@ -25,10 +25,11 @@
   font-weight: 500;
   user-select: none;
   vertical-align: middle;
-  -webkit-appearance: none;
   background-color: getCssVar('button', 'bg-color');
   border: 1px solid getCssVar('button', 'border-color');
   border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 14px;
 
   &:hover,
   &:focus {

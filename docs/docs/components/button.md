@@ -8,7 +8,34 @@
 `type` 属性可以配置不同的按钮类型，展示不同的颜色状态
 
 `simple` 属性可以配置简约的按钮，样式依然由 `type` 控制
+<!-- 
+::: demo
+<template #source>
+<toy-button>default</toy-button>
+<toy-button type="primary">primary</toy-button>
+<toy-button type="success">success</toy-button>
+<toy-button type="danger">danger</toy-button>
+<toy-button type="info">info</toy-button>
+<toy-button type="warning">warning</toy-button>
+</template>
 
+```html
+<toy-button>default</toy-button>
+<toy-button type="primary">primary</toy-button>
+<toy-button type="success">success</toy-button>
+<toy-button type="danger">danger</toy-button>
+<toy-button type="info">info</toy-button>
+<toy-button type="warning">warning</toy-button>
+```
 
+::: -->
+<vp-demo>
 
-<t-button>默认按钮</t-button>
+<toy-button>default</toy-button>
+<toy-button type="primary">primary</toy-button>
+<toy-button type="success">success</toy-button>
+<toy-button type="danger">danger</toy-button>
+<toy-button type="info">info</toy-button>
+<toy-button type="warning">warning</toy-button>
+
+</vp-demo>
