@@ -26,6 +26,22 @@
     <toy-button plain type="info">info</toy-button>
     <toy-button plain type="warning">warning</toy-button>
   </div>
+  <div style="margin: 10px 0">
+    <toy-button text>default</toy-button>
+    <toy-button text type="primary">primary</toy-button>
+    <toy-button text type="success">success</toy-button>
+    <toy-button text type="danger">danger</toy-button>
+    <toy-button text type="info">info</toy-button>
+    <toy-button text type="warning">warning</toy-button>
+  </div>
+  <div style="margin: 10px 0">
+    <toy-button disabled text>default</toy-button>
+    <toy-button disabled text type="primary">primary</toy-button>
+    <toy-button disabled text type="success">success</toy-button>
+    <toy-button disabled text type="danger">danger</toy-button>
+    <toy-button disabled text type="info">info</toy-button>
+    <toy-button disabled text type="warning">warning</toy-button>
+  </div>
 </template>
 
 <script setup lang="ts">

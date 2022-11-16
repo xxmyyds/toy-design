@@ -7,4 +7,5 @@ export const buttonProps = {
   plain: Boolean,
   round: Boolean,
   circle: Boolean,
+  text: Boolean,
 }

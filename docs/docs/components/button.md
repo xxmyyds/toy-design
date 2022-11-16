@@ -70,3 +70,83 @@
 ```
 
 :::
+
+
+## 文字按钮
+
+可以使用`text`属性来展示没有边框和背景色的按钮
+
+::: demo
+<template #example>
+<toy-button text>default</toy-button>
+<toy-button text type="primary">primary</toy-button>
+<toy-button text type="success">success</toy-button>
+<toy-button text type="danger">danger</toy-button>
+<toy-button text type="info">info</toy-button>
+<toy-button text type="warning">warning</toy-button>
+</template>
+
+
+```html
+<toy-button text>default</toy-button>
+<toy-button text type="primary">primary</toy-button>
+<toy-button text type="success">success</toy-button>
+<toy-button text type="danger">danger</toy-button>
+<toy-button text type="info">info</toy-button>
+<toy-button text type="warning">warning</toy-button>
+```
+:::
+
+
+## 禁用按钮
+
+可以使用`disabled`属性来定义按钮是否被禁用
+
+::: demo
+<template #example>
+<toy-button disabled>default</toy-button>
+<toy-button disabled type="primary">primary</toy-button>
+<toy-button disabled type="success">success</toy-button>
+<toy-button disabled type="danger">danger</toy-button>
+<toy-button disabled type="info">info</toy-button>
+<toy-button disabled type="warning">warning</toy-button>
+<div style="margin:10px 0"></div>
+<toy-button disabled plain>default</toy-button>
+<toy-button disabled plain type="primary">primary</toy-button>
+<toy-button disabled plain type="success">success</toy-button>
+<toy-button disabled plain type="danger">danger</toy-button>
+<toy-button disabled plain type="info">info</toy-button>
+<toy-button disabled plain type="warning">warning</toy-button>
+<div style="margin:10px 0"></div>
+<toy-button disabled text>default</toy-button>
+<toy-button disabled text type="primary">primary</toy-button>
+<toy-button disabled text type="success">success</toy-button>
+<toy-button disabled text type="danger">danger</toy-button>
+<toy-button disabled text type="info">info</toy-button>
+<toy-button disabled text type="warning">warning</toy-button>
+</template>
+
+
+```html
+<toy-button disabled>default</toy-button>
+<toy-button disabled type="primary">primary</toy-button>
+<toy-button disabled type="success">success</toy-button>
+<toy-button disabled type="danger">danger</toy-button>
+<toy-button disabled type="info">info</toy-button>
+<toy-button disabled type="warning">warning</toy-button>
+
+<toy-button disabled plain>default</toy-button>
+<toy-button disabled plain type="primary">primary</toy-button>
+<toy-button disabled plain type="success">success</toy-button>
+<toy-button disabled plain type="danger">danger</toy-button>
+<toy-button disabled plain type="info">info</toy-button>
+<toy-button disabled plain type="warning">warning</toy-button>
+
+<toy-button disabled text>default</toy-button>
+<toy-button disabled text type="primary">primary</toy-button>
+<toy-button disabled text type="success">success</toy-button>
+<toy-button disabled text type="danger">danger</toy-button>
+<toy-button disabled text type="info">info</toy-button>
+<toy-button disabled text type="warning">warning</toy-button>
+```
+:::
