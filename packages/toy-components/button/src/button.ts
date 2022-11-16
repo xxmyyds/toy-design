@@ -5,4 +5,6 @@ export const buttonProps = {
   },
   disabled: Boolean,
   plain: Boolean,
+  round: Boolean,
+  circle: Boolean,
 }

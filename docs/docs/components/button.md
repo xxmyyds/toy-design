@@ -22,6 +22,20 @@
 <toy-button plain type="danger">danger</toy-button>
 <toy-button plain type="info">info</toy-button>
 <toy-button plain type="warning">warning</toy-button>
+<div style="margin:10px 0"></div>
+<toy-button round>default</toy-button>
+<toy-button round type="primary">primary</toy-button>
+<toy-button round type="success">success</toy-button>
+<toy-button round type="danger">danger</toy-button>
+<toy-button round type="info">info</toy-button>
+<toy-button round type="warning">warning</toy-button>
+<div style="margin:10px 0"></div>
+<toy-button circle>default</toy-button>
+<toy-button circle type="primary">primary</toy-button>
+<toy-button circle type="success">success</toy-button>
+<toy-button circle type="danger">danger</toy-button>
+<toy-button circle type="info">info</toy-button>
+<toy-button circle type="warning">warning</toy-button>
 </template>
 
 
@@ -39,6 +53,20 @@
 <toy-button plain type="danger">danger</toy-button>
 <toy-button plain type="info">info</toy-button>
 <toy-button plain type="warning">warning</toy-button>
+
+<toy-button round>default</toy-button>
+<toy-button round type="primary">primary</toy-button>
+<toy-button round type="success">success</toy-button>
+<toy-button round type="danger">danger</toy-button>
+<toy-button round type="info">info</toy-button>
+<toy-button round type="warning">warning</toy-button>
+
+<toy-button circle>default</toy-button>
+<toy-button circle type="primary">primary</toy-button>
+<toy-button circle type="success">success</toy-button>
+<toy-button circle type="danger">danger</toy-button>
+<toy-button circle type="info">info</toy-button>
+<toy-button circle type="warning">warning</toy-button>
 ```
 
 :::

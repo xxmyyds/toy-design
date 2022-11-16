@@ -5,6 +5,8 @@
       ns.m(props.type),
       ns.is('disabled', props.disabled),
       ns.is('plain', props.plain),
+      ns.is('round', props.round),
+      ns.is('circle', props.circle),
     ]"
     :disabled="props.disabled"
   >

@@ -68,15 +68,24 @@
     );
   }
 
-  @each $type in (primary, success, info, warning, danger) {
-    @include m($type) {
-      @include set-component-css-var('button', map.get($button, $type, 'base'));
-      @include when(plain) {
-        @include set-component-css-var(
-          'button',
-          map.get($button, $type, 'plain')
-        );
-      }
+  @include when(round) {
+    border-radius: 20px;
+  }
+
+  @include when(circle) {
+    border-radius: 50%;
+    padding: 8px;
+  }
+}
+
+@each $type in (primary, success, info, warning, danger) {
+  @include m($type) {
+    @include set-component-css-var('button', map.get($button, $type, 'base'));
+    @include when(plain) {
+      @include set-component-css-var(
+        'button',
+        map.get($button, $type, 'plain')
+      );
     }
   }
 }
