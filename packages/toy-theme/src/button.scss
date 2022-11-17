@@ -83,6 +83,18 @@
       map.get($button, 'default', 'text')
     );
   }
+
+  @each $size in (large, small) {
+    @include m($size) {
+      height: map.get($size-button, 'height', $size);
+      padding: map.get($size-button, 'padding', $size);
+      font-size: map.get($size-button, 'fs', $size);
+
+      @include when(circle) {
+        padding: map.get($size-button, 'padding-circle', $size);
+      }
+    }
+  }
 }
 
 @each $type in (primary, success, info, warning, danger) {

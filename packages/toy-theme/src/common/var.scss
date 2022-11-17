@@ -267,3 +267,22 @@ $button: map-collect(
   $button-warning,
   $button-danger
 );
+
+$size-button: (
+  'height': (
+    'large': 40px,
+    'small': 24px,
+  ),
+  'padding': (
+    'large': 12px 19px,
+    'small': 5px 11px,
+  ),
+  'fs': (
+    'large': 14px,
+    'small': 12px,
+  ),
+  'padding-circle': (
+    'large': 12px,
+    'small': 5px,
+  ),
+);

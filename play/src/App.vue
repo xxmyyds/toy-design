@@ -42,6 +42,15 @@
     <toy-button disabled text type="info">info</toy-button>
     <toy-button disabled text type="warning">warning</toy-button>
   </div>
+  <div style="margin: 10px 0">
+    size
+    <toy-button disabled size="small">ds</toy-button>
+    <toy-button disabled type="primary">ps</toy-button>
+    <toy-button disabled size="large" type="success">su</toy-button>
+    <toy-button size="small" type="danger">danger</toy-button>
+    <toy-button size="small" type="info">info</toy-button>
+    <toy-button size="small" type="warning">warning</toy-button>
+  </div>
 </template>
 
 <script setup lang="ts">
