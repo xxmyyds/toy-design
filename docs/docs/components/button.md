@@ -16,21 +16,21 @@
 <toy-button type="info">info</toy-button>
 <toy-button type="warning">warning</toy-button>
 <div style="margin:10px 0"></div>
-<toy-button plain>default</toy-button>
+<toy-button plain>plain</toy-button>
 <toy-button plain type="primary">primary</toy-button>
 <toy-button plain type="success">success</toy-button>
 <toy-button plain type="danger">danger</toy-button>
 <toy-button plain type="info">info</toy-button>
 <toy-button plain type="warning">warning</toy-button>
 <div style="margin:10px 0"></div>
-<toy-button round>default</toy-button>
+<toy-button round>round</toy-button>
 <toy-button round type="primary">primary</toy-button>
 <toy-button round type="success">success</toy-button>
 <toy-button round type="danger">danger</toy-button>
 <toy-button round type="info">info</toy-button>
 <toy-button round type="warning">warning</toy-button>
 <div style="margin:10px 0"></div>
-<toy-button circle>default</toy-button>
+<toy-button circle>circle</toy-button>
 <toy-button circle type="primary">primary</toy-button>
 <toy-button circle type="success">success</toy-button>
 <toy-button circle type="danger">danger</toy-button>
@@ -47,21 +47,21 @@
 <toy-button type="info">info</toy-button>
 <toy-button type="warning">warning</toy-button>
 
-<toy-button plain>default</toy-button>
+<toy-button plain>plain</toy-button>
 <toy-button plain type="primary">primary</toy-button>
 <toy-button plain type="success">success</toy-button>
 <toy-button plain type="danger">danger</toy-button>
 <toy-button plain type="info">info</toy-button>
 <toy-button plain type="warning">warning</toy-button>
 
-<toy-button round>default</toy-button>
+<toy-button round>round</toy-button>
 <toy-button round type="primary">primary</toy-button>
 <toy-button round type="success">success</toy-button>
 <toy-button round type="danger">danger</toy-button>
 <toy-button round type="info">info</toy-button>
 <toy-button round type="warning">warning</toy-button>
 
-<toy-button circle>default</toy-button>
+<toy-button circle>circle</toy-button>
 <toy-button circle type="primary">primary</toy-button>
 <toy-button circle type="success">success</toy-button>
 <toy-button circle type="danger">danger</toy-button>
@@ -78,7 +78,7 @@
 
 ::: demo
 <template #example>
-<toy-button text>default</toy-button>
+<toy-button text>text</toy-button>
 <toy-button text type="primary">primary</toy-button>
 <toy-button text type="success">success</toy-button>
 <toy-button text type="danger">danger</toy-button>
@@ -88,7 +88,7 @@
 
 
 ```html
-<toy-button text>default</toy-button>
+<toy-button text>text</toy-button>
 <toy-button text type="primary">primary</toy-button>
 <toy-button text type="success">success</toy-button>
 <toy-button text type="danger">danger</toy-button>
@@ -111,14 +111,14 @@
 <toy-button disabled type="info">info</toy-button>
 <toy-button disabled type="warning">warning</toy-button>
 <div style="margin:10px 0"></div>
-<toy-button disabled plain>default</toy-button>
+<toy-button disabled plain>plain</toy-button>
 <toy-button disabled plain type="primary">primary</toy-button>
 <toy-button disabled plain type="success">success</toy-button>
 <toy-button disabled plain type="danger">danger</toy-button>
 <toy-button disabled plain type="info">info</toy-button>
 <toy-button disabled plain type="warning">warning</toy-button>
 <div style="margin:10px 0"></div>
-<toy-button disabled text>default</toy-button>
+<toy-button disabled text>text</toy-button>
 <toy-button disabled text type="primary">primary</toy-button>
 <toy-button disabled text type="success">success</toy-button>
 <toy-button disabled text type="danger">danger</toy-button>
@@ -148,5 +148,52 @@
 <toy-button disabled text type="danger">danger</toy-button>
 <toy-button disabled text type="info">info</toy-button>
 <toy-button disabled text type="warning">warning</toy-button>
+```
+:::
+
+## 按钮尺寸
+
+可以使用`size`属性来控制按钮的大小尺寸
+
+::: demo
+<template #example>
+<toy-button size="small">small</toy-button>
+<toy-button>default</toy-button>
+<toy-button size="large">large</toy-button>
+<toy-button plain size="small">small</toy-button>
+<toy-button plain>default</toy-button>
+<toy-button plain size="large">large</toy-button>
+<div style="margin:10px 0"></div>
+<toy-button round size="small">small</toy-button>
+<toy-button round>default</toy-button>
+<toy-button round size="large">large</toy-button>
+<toy-button round plain size="small">small</toy-button>
+<toy-button round plain>default</toy-button>
+<toy-button round plain size="large">large</toy-button>
+<div style="margin:10px 0"></div>
+<toy-button circle size="small">xx</toy-button>
+<toy-button circle>xx</toy-button>
+<toy-button circle size="large">xx</toy-button>
+</template>
+
+
+```html
+<toy-button size="small">small</toy-button>
+<toy-button>default</toy-button>
+<toy-button size="large">large</toy-button>
+<toy-button plain size="small">small</toy-button>
+<toy-button plain>default</toy-button>
+<toy-button plain size="large">large</toy-button>
+
+<toy-button round size="small">small</toy-button>
+<toy-button round>default</toy-button>
+<toy-button round size="large">large</toy-button>
+<toy-button round plain size="small">small</toy-button>
+<toy-button round plain>default</toy-button>
+<toy-button round plain size="large">large</toy-button>
+
+<toy-button circle size="small">xx</toy-button>
+<toy-button circle>xx</toy-button>
+<toy-button circle size="large">xx</toy-button>
 ```
 :::
