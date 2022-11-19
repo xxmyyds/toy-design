@@ -7,5 +7,3 @@
 <script setup name="ToyInput" lang="ts">
 // import {} from 'vue'
 </script>
-
-<style scoped lang="scss"></style>

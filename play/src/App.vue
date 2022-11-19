@@ -51,10 +51,15 @@
     <toy-button size="small" type="info">info</toy-button>
     <toy-button size="small" type="warning">warning</toy-button>
   </div>
+  <toy-icon>
+    <toy-icon-add></toy-icon-add>
+  </toy-icon>
+  <toy-icon :icon="ToyIconAdd"> </toy-icon>
 </template>
 
 <script setup lang="ts">
 import { nextTick, onMounted, ref } from 'vue'
+import { ToyIconAdd } from '../../dist-icons'
 
 const btn = ref(null)
 onMounted(() => {
