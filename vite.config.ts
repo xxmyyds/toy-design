@@ -3,10 +3,16 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import dts from 'vite-plugin-dts'
 import vueSetupExtend from 'unplugin-vue-setup-extend-plus/vite'
+import svgLoader from 'vite-svg-loader' // https://github.com/jpkleemans/vite-svg-loader
 import { move } from './scripts/move'
 import { normalize } from './scripts/normalize'
 
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@toy-design': resolve(__dirname, 'packages'),
+    },
+  },
   plugins: [
     vue(),
     dts({
@@ -18,7 +24,12 @@ export default defineConfig({
       insertTypesEntry: true, // 是否生成类型声明入口
       cleanVueFileName: true, // 是否将 '.vue.d.ts' 文件名转换为 '.d.ts'
       copyDtsFiles: true, // 是否将源码里的 .d.ts 文件复制到 outputDir
-      include: ['./packages/toy-design'], // 手动设置包含路径的 glob
+      include: [
+        './packages/toy-design',
+        './packages/toy-components',
+        './packages/toy-icon',
+        './packages/toy-tools',
+      ], // 手动设置包含路径的 glob
       // 构建后回调钩子
       afterBuild: (): void => {
         move()
@@ -26,6 +37,7 @@ export default defineConfig({
       },
     }),
     vueSetupExtend(),
+    svgLoader(),
   ],
   build: {
     target: 'modules', // 这是指 支持原生 ES 模块、原生 ESM 动态导入
@@ -44,13 +56,15 @@ export default defineConfig({
           format: 'cjs',
           exports: 'named',
           dir: 'dist/cjs',
-          entryFileNames: 'index.js',
+          preserveModules: true,
+          entryFileNames: '[name].js',
         },
         {
           format: 'es',
           exports: 'named',
           dir: 'dist/es',
-          entryFileNames: 'index.js',
+          preserveModules: true,
+          entryFileNames: '[name].js',
         },
       ],
     },

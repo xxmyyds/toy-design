@@ -59,7 +59,7 @@
 
 <script setup lang="ts">
 import { nextTick, onMounted, ref } from 'vue'
-import { ToyIconAdd } from '../../dist-icons'
+import { ToyButton } from '@dist/es'
 
 const btn = ref(null)
 onMounted(() => {

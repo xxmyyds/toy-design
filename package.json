@@ -15,6 +15,7 @@
   "main": "index.js",
   "scripts": {
     "publish:npm": "sh ./scripts/publish.sh",
+    "publish-icon:npm": "sh ./scripts/publish-icon.sh",
     "clean": "rimraf dist",
     "build": "pnpm clean && pnpm build:css && vite build",
     "build:css": "vite build --config vite.config.css.ts",

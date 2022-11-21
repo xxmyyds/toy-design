@@ -12,7 +12,7 @@ export default defineConfig({
       insertTypesEntry: true, // 是否生成类型声明入口
       cleanVueFileName: true, // 是否将 '.vue.d.ts' 文件名转换为 '.d.ts'
       copyDtsFiles: true, // 是否将源码里的 .d.ts 文件复制到 outputDir
-      include: ['./packages/toy-icons'], // 手动设置包含路径的 glob
+      include: ['./packages/toy-icon'], // 手动设置包含路径的 glob
       afterBuild: (): void => {
         moveIcon()
       },
@@ -22,9 +22,9 @@ export default defineConfig({
   build: {
     minify: true,
     emptyOutDir: false,
-    outDir: resolve(__dirname, 'dist-icons'),
+    outDir: resolve(__dirname, 'dist-icon'),
     lib: {
-      entry: resolve(__dirname, 'packages/toy-icons/index.ts'),
+      entry: resolve(__dirname, 'packages/toy-icon/index.ts'),
       formats: ['es'],
       fileName: () => 'index.js',
     },

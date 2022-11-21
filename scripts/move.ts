@@ -1,5 +1,5 @@
 import { copyFileSync } from 'fs'
-import { version } from '../packages/toy-icons/package.json'
+import { version } from '../packages/toy-icon/package.json'
 
 export function move() {
   const files = [
@@ -18,12 +18,12 @@ export function move() {
 
 export function moveIcon() {
   const files = [
-    { entry: './packages/toy-icons/README.md', outDir: 'dist-icons/README.md' },
+    { entry: './packages/toy-icon/README.md', outDir: 'dist-icon/README.md' },
     {
-      entry: './packages/toy-icons/package.json',
-      outDir: 'dist-icons/package.json',
+      entry: './packages/toy-icon/package.json',
+      outDir: 'dist-icon/package.json',
     },
-    { entry: './LICENSE', outDir: 'dist-icons/LICENSE' },
+    { entry: './LICENSE', outDir: 'dist-icon/LICENSE' },
   ] as const
 
   files.forEach((item): void => {
