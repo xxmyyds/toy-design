@@ -51,6 +51,9 @@
     <toy-button size="small" type="info">info</toy-button>
     <toy-button size="small" type="warning">warning</toy-button>
   </div>
+  <toy-button type="primary" :icon="ToyIconAdd" circle />
+  <toy-button type="success" size="small" :icon="ToyIconAdd" circle />
+  <toy-button type="danger" size="large" :icon="ToyIconAdd" circle />
   <toy-icon>
     <toy-icon-add></toy-icon-add>
   </toy-icon>

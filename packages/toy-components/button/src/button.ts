@@ -1,3 +1,5 @@
+import type { Component, PropType, VNode } from 'vue'
+
 export const buttonProps = {
   type: {
     type: String,
@@ -12,5 +14,8 @@ export const buttonProps = {
     type: String,
     values: ['', 'default', 'small', 'large'],
     require: false,
+  },
+  icon: {
+    type: Object as PropType<VNode | Component>,
   },
 }
