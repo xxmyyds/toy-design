@@ -1,6 +1,6 @@
 {
   "name": "toy-design",
-  "version": "0.0.14-beta.0",
+  "version": "0.0.14-beta.1",
   "description": "",
   "keywords": [
     "toy-design",
@@ -13,6 +13,11 @@
   "license": "MIT",
   "repository": "https://github.com/xxmyyds/toy-design",
   "author": "xxmyyds",
+  "files": [
+    "cjs",
+    "dist",
+    "es"
+  ],
   "exports": {
     ".": {
       "import": "./es/index.js"
@@ -28,5 +33,9 @@
   },
   "bugs": {
     "url": "https://github.com/xxmyyds/toy-design/issues"
+  },
+  "vetur": {
+    "tags": "tags.json",
+    "attributes": "attributes.json"
   }
 }
