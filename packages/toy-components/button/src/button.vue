@@ -25,10 +25,7 @@
 
 <script setup name="ToyButton" lang="ts">
 import { useNamespace } from '@toy-design/toy-tools'
-import { useSlots } from 'vue'
-import { ToyIcon } from '../../icon'
 import { buttonProps } from './button'
 const props = defineProps(buttonProps)
 const ns = useNamespace('button')
-// const slots = useSlots()
 </script>

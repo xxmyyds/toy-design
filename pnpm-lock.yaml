@@ -63,12 +63,15 @@ importers:
   packages/toy-design:
     specifiers:
       '@toy-design/toy-components': workspace:*
-      '@toy-design/toy-icon': workspace:^0.0.1
+      '@toy-design/toy-icon': workspace:*
       '@toy-design/toy-tools': workspace:*
     dependencies:
       '@toy-design/toy-components': link:../toy-components
       '@toy-design/toy-icon': link:../toy-icon
       '@toy-design/toy-tools': link:../toy-tools
+
+  packages/toy-icon:
+    specifiers: {}
 
   packages/toy-theme:
     specifiers: {}

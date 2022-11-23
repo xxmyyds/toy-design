@@ -1,0 +1,14 @@
+{
+    "toy-button/type": {
+        "type": "'primary'| 'success'| 'warning'| 'danger'| 'info'| 'text'",
+        "options": [
+            "primary",
+            "success",
+            "warning",
+            "danger",
+            "info",
+            "text"
+        ],
+        "description": "button type\n\n[Docs](https://element-plus.org/en-US/component/button.html#button-attributes)"
+    }
+}

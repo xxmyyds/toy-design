@@ -54,6 +54,7 @@
   <toy-button type="primary" :icon="ToyIconAdd" circle />
   <toy-button type="success" size="small" :icon="ToyIconAdd" circle />
   <toy-button type="danger" size="large" :icon="ToyIconAdd" circle />
+  <toy-button></toy-button>
   <toy-icon>
     <toy-icon-add></toy-icon-add>
   </toy-icon>

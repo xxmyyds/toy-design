@@ -1,0 +1,15 @@
+{
+    "toy-button": {
+        "attributes": [
+            "size",
+            "type",
+            "plain",
+            "text",
+            "round",
+            "circle",
+            "disabled",
+            "icon"
+        ],
+        "description": "Commonly used button.\n\n[Docs](https://element-plus.org/en-US/component/button.html#button)"
+    }
+}

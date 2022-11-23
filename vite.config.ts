@@ -23,7 +23,11 @@ export default defineConfig({
       insertTypesEntry: true, // 是否生成类型声明入口
       cleanVueFileName: true, // 是否将 '.vue.d.ts' 文件名转换为 '.d.ts'
       copyDtsFiles: true, // 是否将源码里的 .d.ts 文件复制到 outputDir
-      include: ['./packages/toy-design'], // 手动设置包含路径的 glob
+      include: [
+        './packages/toy-design',
+        './packages/toy-components/button',
+        './packages/toy-tools',
+      ], // 手动设置包含路径的 glob
 
       // 构建后回调钩子
       afterBuild: (): void => {
@@ -50,12 +54,14 @@ export default defineConfig({
           format: 'cjs',
           exports: 'named',
           dir: 'dist/cjs',
+          preserveModules: true,
           entryFileNames: '[name].js',
         },
         {
           format: 'es',
           exports: 'named',
           dir: 'dist/es',
+          preserveModules: true,
           entryFileNames: '[name].js',
         },
       ],

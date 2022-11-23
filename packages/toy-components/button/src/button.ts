@@ -1,4 +1,5 @@
-import type { Component, PropType, VNode } from 'vue'
+import type { Component, ExtractPropTypes, PropType, VNode } from 'vue'
+import type Button from './button.vue'
 
 export const buttonProps = {
   type: {
@@ -18,4 +19,7 @@ export const buttonProps = {
   icon: {
     type: Object as PropType<VNode | Component>,
   },
-}
+} as const
+
+export type Props = ExtractPropTypes<typeof buttonProps>
+export type ButtonInstance = InstanceType<typeof Button>
