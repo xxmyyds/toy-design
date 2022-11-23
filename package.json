@@ -1,7 +1,6 @@
 {
   "name": "toy-design",
-  "packageManager": "pnpm@7.12.1",
-  "private": "true",
+  "version": "0.0.14-beta.3",
   "engines": {
     "node": ">= 16"
   },
@@ -11,8 +10,17 @@
     "vue",
     "framework"
   ],
+  "license": "MIT",
+  "repository": "https://github.com/xxmyyds/toy-design",
   "author": "xxmyyds",
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./es/index.js"
+    }
+  },
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
   "scripts": {
     "publish:npm": "sh ./scripts/publish.sh",
     "publish-icon:npm": "sh ./scripts/publish-icon.sh",
@@ -20,7 +28,7 @@
     "build": "pnpm clean && pnpm build:css && vite build",
     "build:css": "vite build --config vite.config.css.ts",
     "build:icon": "rimraf dist-icon && vite build --config vite.config.icon.ts",
-    "release": "bumpp ./packages/toy-design/package.json",
+    "release": "bumpp ./package.json",
     "commit": "git cz",
     "prepare": "husky install",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
@@ -58,5 +66,12 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "bugs": {
+    "url": "https://github.com/xxmyyds/toy-design/issues"
+  },
+  "vetur": {
+    "tags": "tags.json",
+    "attributes": "attributes.json"
   }
 }
