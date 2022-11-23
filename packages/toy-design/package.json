@@ -13,11 +13,6 @@
   "license": "MIT",
   "repository": "https://github.com/xxmyyds/toy-design",
   "author": "xxmyyds",
-  "files": [
-    "cjs",
-    "dist",
-    "es"
-  ],
   "exports": {
     ".": {
       "import": "./es/index.js"
