@@ -5,7 +5,7 @@ export function move() {
   const files = [
     { entry: './README.md', outDir: 'dist/README.md' },
     {
-      entry: './package.json',
+      entry: './packages/toy-design/package.json',
       outDir: 'dist/package.json',
     },
     { entry: './LICENSE', outDir: 'dist/LICENSE' },
