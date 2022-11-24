@@ -1,3 +1,3 @@
-export * from './button'
-export * from './input'
-export * from './icon'
+export { ToyButton } from './button'
+export { ToyInput } from './input'
+export { ToyIcon } from './icon'

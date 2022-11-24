@@ -16,7 +16,7 @@ export default defineConfig({
     vue(),
     dts({
       // logDiagnostics: true, // 是否打印类型诊断信息
-      // skipDiagnostics: false, // 是否跳过类型诊断
+      skipDiagnostics: true, // 是否跳过类型诊断
       // aliasesExclude: ['./alert.vue'], // 设置在转换别名时哪些路径需要排除
       staticImport: true, // 是否将动态引入转换为静态
       outputDir: ['./dist/es'], // 可以指定一个数组来输出到多个目录中
@@ -50,19 +50,45 @@ export default defineConfig({
     rollupOptions: {
       external: ['vue'],
       output: [
+        // {
+        //   format: 'cjs',
+        //   exports: 'named',
+        //   dir: 'dist/cjs',
+        //   preserveModules: true,
+        //   entryFileNames: '[name].js',
+        // },
+        // {
+        //   format: 'es',
+        //   exports: 'named',
+        //   dir: 'dist/es',
+        //   preserveModules: true,
+        //   entryFileNames: '[name].js',
+        // },
+        {
+          format: 'es', // 打包模式 https://rollupjs.org/guide/en/#outputformat
+          exports: 'named', // 导出模式 https://rollupjs.org/guide/en/#outputexports
+          dir: 'dist/es', // 输出路径 https://rollupjs.org/guide/en/#outputdir
+          sourcemap: false, // https://rollupjs.org/guide/en/#outputsourcemap
+          entryFileNames: 'index.js', // 输出后的文件名 https://rollupjs.org/guide/en/#outputentryfilenames
+          chunkFileNames: '[name].js', // 输出的 chunk文件名 https://rollupjs.org/guide/en/#outputchunkfilenames
+          assetFileNames: '[name].[ext]', // 输出资产文件名 https://rollupjs.org/guide/en/#outputassetfilenames
+          namespaceToStringTag: true, // https://rollupjs.org/guide/en/#outputnamespacetostringtag
+          inlineDynamicImports: false, // https://rollupjs.org/guide/en/#outputinlinedynamicimports
+          manualChunks: undefined,
+          preserveModules: true, // https://rollupjs.org/guide/en/#outputpreservemodules
+        },
         {
           format: 'cjs',
           exports: 'named',
-          dir: 'dist/cjs',
-          // preserveModules: true,
-          entryFileNames: '[name].js',
-        },
-        {
-          format: 'es',
-          exports: 'named',
-          dir: 'dist/es',
-          // preserveModules: true,
-          entryFileNames: '[name].js',
+          dir: 'dist/lib',
+          sourcemap: false,
+          entryFileNames: 'index.js',
+          chunkFileNames: '[name].js',
+          assetFileNames: '[name].[ext]',
+          namespaceToStringTag: true,
+          inlineDynamicImports: false,
+          manualChunks: undefined,
+          preserveModules: true,
         },
       ],
     },
