@@ -16,7 +16,11 @@
   "exports": {
     ".": {
       "import": "./es/index.js"
-    }
+    },
+    "./es": "./es/index.js",
+    "./es/*.js": "./es/*.js",
+    "./es/*": "./es/*.js",
+    "./*": "./*"
   },
   "main": "lib/index.js",
   "module": "es/index.js",
