@@ -97,6 +97,16 @@
 //   const sourceFiles: SourceFile[] = []
 //   // project.addSourceFileAtPath(path.resolve(projRoot, 'typings/vite-env.d.ts'))
 //   await Promise.all([
+//     ...entryPaths.map(async (file) => {
+//       const content = await readFile(path.resolve(projRoot, file), 'utf-8')
+//       sourceFiles.push(
+//         project.createSourceFile(path.resolve(projRoot, file), content, {
+//           overwrite: true,
+//         })
+//       )
+//       // const sourceFile = project.addSourceFileAtPath(file)
+//       // sourceFiles.push(sourceFile)
+//     }),
 //     ...toolsPaths.map(async (file) => {
 //       const content = await readFile(path.resolve(projRoot, file), 'utf-8')
 //       sourceFiles.push(
