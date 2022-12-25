@@ -9,6 +9,5 @@
 import { useNamespace } from '@toy-design/toy-tools'
 import { props } from './icon'
 const ns = useNamespace('icon')
-
-const prop = defineProps(props)
+defineProps(props)
 </script>

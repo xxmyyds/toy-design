@@ -1,7 +1,7 @@
 import type { App, DefineComponent, Plugin } from 'vue'
 import version from './version'
 
-type InstallType<T> = T & Plugin
+export type InstallType<T> = T & Plugin
 
 export function withInstall<T, E extends Record<string, any>>(
   component: T,
@@ -20,13 +20,13 @@ export function withInstall<T, E extends Record<string, any>>(
   return component as InstallType<T> & E
 }
 
-export function makeInstall(components: DefineComponent[]) {
+export function makeInstall<T>(components: T[]) {
   const installTargets: App[] = []
 
   const install = (app: App): void => {
     if (installTargets.includes(app)) return
     installTargets.push(app)
-    components.forEach((component) => {
+    ;(components as DefineComponent[]).forEach((component) => {
       const { name } = component
       registerComponent(app, name, component)
     })

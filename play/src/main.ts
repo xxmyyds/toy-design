@@ -7,7 +7,7 @@ import App from './App.vue'
 // import './index.scss'
 
 // 打包阶段引入
-import ToyDesign from '@dist/es'
-import '@dist/dist/index.css'
+import { ToyButton } from 'toy-design'
+import 'toy-design/dist/index.css'
 
-createApp(App).use(ToyDesign).mount('#play')
+createApp(App).use(ToyButton).mount('#play')

@@ -27,6 +27,7 @@
     <toy-button plain type="warning">warning</toy-button>
   </div>
   <div style="margin: 10px 0">
+    text
     <toy-button text>default</toy-button>
     <toy-button text type="primary">primary</toy-button>
     <toy-button text type="success">success</toy-button>
@@ -35,6 +36,7 @@
     <toy-button text type="warning">warning</toy-button>
   </div>
   <div style="margin: 10px 0">
+    text
     <toy-button disabled text>default</toy-button>
     <toy-button disabled text type="primary">primary</toy-button>
     <toy-button disabled text type="success">success</toy-button>
@@ -51,19 +53,19 @@
     <toy-button size="small" type="info">info</toy-button>
     <toy-button size="small" type="warning">warning</toy-button>
   </div>
-  <toy-button type="primary" :icon="ToyIconAdd" circle />
+  <!-- <toy-button type="primary" :icon="ToyIconAdd" circle />
   <toy-button type="success" size="small" :icon="ToyIconAdd" circle />
   <toy-button type="danger" size="large" :icon="ToyIconAdd" circle />
   <toy-button></toy-button>
   <toy-icon>
     <toy-icon-add></toy-icon-add>
   </toy-icon>
-  <toy-icon :icon="ToyIconAdd"> </toy-icon>
+  <toy-icon :icon="ToyIconAdd"> </toy-icon> -->
 </template>
 
 <script setup lang="ts">
 import { nextTick, onMounted, ref } from 'vue'
-import { ToyIconAdd } from '../../dist-icon'
+// import { ToyIconAdd } from '../../dist-icon'
 
 const btn = ref(null)
 onMounted(() => {

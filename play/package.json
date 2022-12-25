@@ -6,6 +6,9 @@
   "scripts": {
     "dev": "vite"
   },
+  "dependencies": {
+    "toy-design": "../dist"
+  },
   "keywords": [],
   "author": ""
 }

@@ -1,9 +1,7 @@
 <template>
-  <div class="input">
-    <input type="text" />
-  </div>
+  <div class="input">123</div>
 </template>
 
-<script setup name="ToyInput" lang="ts">
+<script setup lang="ts">
 // import {} from 'vue'
 </script>

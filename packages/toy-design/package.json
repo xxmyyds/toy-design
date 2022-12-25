@@ -15,16 +15,14 @@
   "author": "xxmyyds",
   "exports": {
     ".": {
-      "import": "./es/index.js"
+      "import": "./es/toy-design/index.js"
     },
-    "./es": "./es/index.js",
-    "./es/*.js": "./es/*.js",
-    "./es/*": "./es/*.js",
+    "./es": "./es/toy-design/index.js",
     "./*": "./*"
   },
-  "main": "lib/index.js",
-  "module": "es/index.js",
-  "types": "es/index.d.ts",
+  "main": "lib/toy-design/index.js",
+  "module": "es/toy-design/index.js",
+  "types": "types/toy-design/index.d.ts",
   "dependencies": {
     "@toy-design/toy-components": "workspace:*",
     "@toy-design/toy-icon": "workspace:*",

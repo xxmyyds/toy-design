@@ -1,6 +1,6 @@
 import Theme from 'vitepress/theme'
 import vpDemo from './components/vp-demo.vue'
-import ToyDesign from '../../../../dist/es'
+import ToyDesign from '../../../../dist/es/toy-design/index'
 import '../../../../dist/dist/index.css'
 
 import { h } from 'vue'
