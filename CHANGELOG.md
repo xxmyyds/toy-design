@@ -1,4 +1,8 @@
-# [](https://github.com/xxmyyds/toy-design/compare/v0.0.15-beta.5...v) (2022-12-25)
+# [](https://github.com/xxmyyds/toy-design/compare/v0.0.15-beta.6...v) (2022-12-25)
+
+
+
+## [0.0.15-beta.6](https://github.com/xxmyyds/toy-design/compare/v0.0.15-beta.5...v0.0.15-beta.6) (2022-12-25)
 
 
 
