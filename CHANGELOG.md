@@ -1,9 +1,51 @@
-# [](https://github.com/xxmyyds/toy-design/compare/v0.0.14-beta.0...v) (2022-11-19)
+# [](https://github.com/xxmyyds/toy-design/compare/v0.0.15-beta.5...v) (2022-12-25)
+
+
+
+## [0.0.15-beta.5](https://github.com/xxmyyds/toy-design/compare/v0.0.15-beta.3...v0.0.15-beta.5) (2022-12-25)
+
+
+### Features
+
+* **types:** generate types ([a77a003](https://github.com/xxmyyds/toy-design/commit/a77a003d160c12839b45fe12ce1b26c145afce33))
+
+
+
+## [0.0.15-beta.3](https://github.com/xxmyyds/toy-design/compare/v0.0.15-beta.2...v0.0.15-beta.3) (2022-11-24)
+
+
+
+## [0.0.15-beta.2](https://github.com/xxmyyds/toy-design/compare/v0.0.15-beta.1...v0.0.15-beta.2) (2022-11-24)
+
+
+
+## [0.0.15-beta.1](https://github.com/xxmyyds/toy-design/compare/v0.0.15-beta.0...v0.0.15-beta.1) (2022-11-24)
+
+
+
+## [0.0.15-beta.0](https://github.com/xxmyyds/toy-design/compare/v0.0.14-beta.4...v0.0.15-beta.0) (2022-11-23)
+
+
+
+## [0.0.14-beta.4](https://github.com/xxmyyds/toy-design/compare/v0.0.14-beta.3...v0.0.14-beta.4) (2022-11-23)
+
+
+
+## [0.0.14-beta.3](https://github.com/xxmyyds/toy-design/compare/v0.0.14-beta.2...v0.0.14-beta.3) (2022-11-23)
+
+
+
+## [0.0.14-beta.2](https://github.com/xxmyyds/toy-design/compare/v0.0.14-beta.1...v0.0.14-beta.2) (2022-11-23)
+
+
+
+## [0.0.14-beta.1](https://github.com/xxmyyds/toy-design/compare/v0.0.14-beta.0...v0.0.14-beta.1) (2022-11-23)
 
 
 ### Features
 
 * **button:** button size ([b508f32](https://github.com/xxmyyds/toy-design/commit/b508f32c51774cdd04abb475f1cd6f0f41afb604))
+* **icon:** icon组件 icon图标 ([70cece4](https://github.com/xxmyyds/toy-design/commit/70cece48b100498158bbd5468b75fa766e684ca4))
 * 添加dev阶段css ([897c8b9](https://github.com/xxmyyds/toy-design/commit/897c8b9947315da1eda7d9e0f156a05e9157ea17))
 
 
