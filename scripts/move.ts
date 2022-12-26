@@ -11,7 +11,7 @@ export function move() {
     { entry: './LICENSE', outDir: 'dist/LICENSE' },
     { entry: './helper/vetur/attributes.json', outDir: 'dist/attributes.json' },
     { entry: './helper/vetur/tags.json', outDir: 'dist/tags.json' },
-    { entry: './typings/global.ts', outDir: 'dist/global.ts' },
+    { entry: './typings/global.d.ts', outDir: 'dist/global.d.ts' },
   ] as const
 
   files.forEach((item): void => {
