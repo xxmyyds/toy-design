@@ -1,4 +1,15 @@
-# [](https://github.com/xxmyyds/toy-design/compare/v0.0.15-beta.6...v) (2022-12-25)
+# [](https://github.com/xxmyyds/toy-design/compare/v0.0.16-beta.0...v) (2022-12-26)
+
+
+
+## [0.0.16-beta.0](https://github.com/xxmyyds/toy-design/compare/v0.0.15-beta.6...v0.0.16-beta.0) (2022-12-26)
+
+
+### Features
+
+* **icon:** add icons ([4250f8d](https://github.com/xxmyyds/toy-design/commit/4250f8d550c6e26a7b6a093671fd5ad515a25675))
+* **icon:** toy-icon and types ([70dab39](https://github.com/xxmyyds/toy-design/commit/70dab39dd80159883619e7696baa5bc0dca1fbae))
+* **volar:** support volar tyoes ([bae4142](https://github.com/xxmyyds/toy-design/commit/bae414258ff7dcdc0cbbea17c0f0acbdc73d7789))
 
 
 
