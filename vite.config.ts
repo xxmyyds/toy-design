@@ -21,7 +21,6 @@ export default defineConfig({
       outputDir: ['./dist/types'], // 可以指定一个数组来输出到多个目录中
       // insertTypesEntry: true, // 是否生成类型声明入口
       cleanVueFileName: false, // 是否将 '.vue.d.ts' 文件名转换为 '.d.ts'
-      copyDtsFiles: true, // 是否将源码里的 .d.ts 文件复制到 outputDir
       include: ['packages/toy-*'],
       // 构建后回调钩子
       afterBuild: (): void => {
