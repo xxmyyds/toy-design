@@ -18,7 +18,8 @@
       "import": "./es/toy-design/index.js"
     },
     "./es": "./es/toy-design/index.js",
-    "./*": "./*"
+    "./*": "./*",
+    "./toy-icon": "./toy-icon/index.js"
   },
   "main": "lib/toy-design/index.js",
   "module": "es/toy-design/index.js",
