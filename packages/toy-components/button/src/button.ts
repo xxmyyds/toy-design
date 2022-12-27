@@ -29,5 +29,5 @@ export const buttonProps = {
   },
 } as const
 
-export type Props = ExtractPropTypes<typeof buttonProps>
+export type ButtonProps = ExtractPropTypes<typeof buttonProps>
 export type ButtonInstance = InstanceType<typeof Button>

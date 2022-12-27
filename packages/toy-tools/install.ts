@@ -1,4 +1,5 @@
 import type { App, DefineComponent, Plugin } from 'vue'
+
 import version from './version'
 
 export type InstallType<T> = T & Plugin
@@ -18,6 +19,12 @@ export function withInstall<T, E extends Record<string, any>>(
   }
 
   return component as InstallType<T> & E
+}
+
+export function withNoopInstall<T>(component: T) {
+  ;(component as InstallType<T>).install = () => {}
+
+  return component as InstallType<T>
 }
 
 export function makeInstall<T>(components: T[]) {

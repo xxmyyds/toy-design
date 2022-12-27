@@ -63,6 +63,11 @@
   </toy-button>
 
   <toy-icon :icon="ToyIconAdd"> </toy-icon>
+
+  <br />
+  <toy-button-group>
+    <toy-button type="danger">danger</toy-button>
+  </toy-button-group>
 </template>
 
 <script setup lang="ts">
