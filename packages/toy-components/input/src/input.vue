@@ -3,5 +3,8 @@
 </template>
 
 <script setup lang="ts">
+defineOptions({
+  name: 'ToyInput',
+})
 // import {} from 'vue'
 </script>

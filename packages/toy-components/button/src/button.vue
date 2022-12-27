@@ -2,19 +2,19 @@
   <button
     :class="[
       ns.b(),
-      ns.m(props.type),
-      ns.m(props.size),
-      ns.is('disabled', props.disabled),
-      ns.is('plain', props.plain),
-      ns.is('round', props.round),
-      ns.is('circle', props.circle),
-      ns.is('text', props.text),
+      ns.m(type),
+      ns.m(size),
+      ns.is('disabled', disabled),
+      ns.is('plain', plain),
+      ns.is('round', round),
+      ns.is('circle', circle),
+      ns.is('text', text),
     ]"
-    :disabled="props.disabled"
-    :aria-disabled="props.disabled"
+    :disabled="disabled"
+    :aria-disabled="disabled"
   >
-    <toy-icon v-if="props.icon || $slots.icon">
-      <component :is="props.icon" v-if="props.icon" />
+    <toy-icon v-if="icon || $slots.icon">
+      <component :is="icon" v-if="icon" />
       <slot v-else name="icon" />
     </toy-icon>
     <span v-if="$slots.default">
@@ -23,10 +23,13 @@
   </button>
 </template>
 
-<script setup name="ToyButton" lang="ts">
+<script setup lang="ts">
 import { useNamespace } from '@toy-design/toy-tools'
 import ToyIcon from '../../icon/src/icon.vue'
 import { buttonProps } from './button'
+defineOptions({
+  name: 'ToyButton',
+})
 const props = defineProps(buttonProps)
 const ns = useNamespace('button')
 </script>

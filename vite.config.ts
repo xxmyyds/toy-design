@@ -2,7 +2,7 @@ import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import dts from 'vite-plugin-dts'
-import vueSetupExtend from 'unplugin-vue-setup-extend-plus/vite'
+import VueMacros from 'unplugin-vue-macros/vite'
 import { move } from './scripts/move'
 import { normalize } from './scripts/normalize'
 
@@ -13,7 +13,6 @@ export default defineConfig({
     },
   },
   plugins: [
-    vue(),
     dts({
       skipDiagnostics: false, // 是否跳过类型诊断
       // aliasesExclude: ['./alert.vue'], // 设置在转换别名时哪些路径需要排除
@@ -28,7 +27,12 @@ export default defineConfig({
         normalize()
       },
     }),
-    vueSetupExtend(),
+
+    VueMacros({
+      plugins: {
+        vue: vue(),
+      },
+    }),
   ],
   build: {
     target: 'modules', // 这是指 支持原生 ES 模块、原生 ESM 动态导入

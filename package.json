@@ -52,10 +52,9 @@
     "svgo": "^3.0.2",
     "ts-morph": "^17.0.1",
     "typescript": "^4.8.4",
-    "unplugin-vue-setup-extend-plus": "^0.3.2",
+    "unplugin-vue-macros": "^1.1.1",
     "vite": "^3.1.8",
     "vite-plugin-dts": "^1.7.1",
-    "vite-svg-loader": "^3.6.0",
     "vitest": "^0.24.3"
   },
   "config": {
