@@ -54,8 +54,8 @@
     <toy-button size="small" type="warning">warning</toy-button>
   </div>
   <toy-button type="primary" :icon="ToyIconAdd" circle />
-  <toy-button type="success" size="small" :icon="ToyIconAdd" circle />
-  <toy-button type="danger" size="large" :icon="ToyIconAdd" circle />
+  <toy-button type="success" size="small" :icon="ToyIconIosMinus" circle />
+  <toy-button type="danger" size="large" :icon="ToyIconIosPlus" circle />
   <toy-button circle>
     <toy-icon>
       <toy-icon-add />
@@ -67,7 +67,11 @@
 
 <script setup lang="ts">
 import { nextTick, onMounted, ref } from 'vue'
-import { ToyIconAdd } from 'toy-design/toy-icon'
+import {
+  ToyIconAdd,
+  ToyIconIosMinus,
+  ToyIconIosPlus,
+} from 'toy-design/toy-icon'
 
 const btn = ref(null)
 
