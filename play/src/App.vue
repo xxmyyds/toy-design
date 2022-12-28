@@ -53,6 +53,7 @@
     <toy-button size="small" type="info">info</toy-button>
     <toy-button size="small" type="warning">warning</toy-button>
   </div>
+  Icon
   <toy-button type="primary" :icon="ToyIconAdd" circle />
   <toy-button type="success" size="small" :icon="ToyIconIosMinus" circle />
   <toy-button type="danger" size="large" :icon="ToyIconIosPlus" circle />
@@ -65,8 +66,11 @@
   <toy-icon :icon="ToyIconAdd"> </toy-icon>
 
   <br />
-  <toy-button-group>
-    <toy-button type="danger">danger</toy-button>
+  按钮组
+  <toy-button-group size="mini" type="primary">
+    <toy-button :icon="ToyIconAdd" />
+    <toy-button :icon="ToyIconIosMinus" />
+    <toy-button type="danger" :icon="ToyIconIosPlus" />
   </toy-button-group>
 </template>
 

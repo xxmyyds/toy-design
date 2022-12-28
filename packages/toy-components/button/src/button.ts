@@ -13,6 +13,7 @@ export const buttonProps = {
   type: {
     type: String,
     default: '',
+    require: false,
   },
   disabled: Boolean,
   plain: Boolean,

@@ -2,8 +2,8 @@
   <button
     :class="[
       ns.b(),
-      ns.m(type),
-      ns.m(size),
+      ns.m(_type),
+      ns.m(_size),
       ns.is('disabled', disabled),
       ns.is('plain', plain),
       ns.is('round', round),
@@ -25,6 +25,7 @@
 
 <script setup lang="ts">
 import { useNamespace } from '@toy-design/toy-tools'
+import { useButton } from '../hooks/use-button'
 import ToyIcon from '../../icon/src/icon.vue'
 import { buttonProps } from './button'
 defineOptions({
@@ -32,4 +33,5 @@ defineOptions({
 })
 const props = defineProps(buttonProps)
 const ns = useNamespace('button')
+const { _size, _type } = useButton(props)
 </script>

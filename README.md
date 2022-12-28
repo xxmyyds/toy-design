@@ -1,5 +1,5 @@
 # toy-design
-基于vue3的组件库,良好支持typescript，Vetur、Volar插件
+基于vue3的组件库,良好支持Typescript，Vetur、Volar插件
 
 ## 使用
 

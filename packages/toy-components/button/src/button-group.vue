@@ -6,7 +6,7 @@
 
 <script lang="ts" setup>
 import { useNamespace } from '@toy-design/toy-tools'
-import { provide, reactive, toRef } from 'vue'
+import { useButtonGroup } from '../hooks/use-button'
 import { buttonGroupProps } from './button-group'
 
 defineOptions({
@@ -14,11 +14,5 @@ defineOptions({
 })
 const props = defineProps(buttonGroupProps)
 const ns = useNamespace('button')
-provide(
-  'button-group-context',
-  reactive({
-    size: toRef(props, 'size'),
-    type: toRef(props, 'type'),
-  })
-)
+useButtonGroup(props)
 </script>
