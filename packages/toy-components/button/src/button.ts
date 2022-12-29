@@ -28,6 +28,7 @@ export const buttonProps = {
   icon: {
     type: iconPropType,
   },
+  loading: Boolean,
 } as const
 
 export type ButtonProps = ExtractPropTypes<typeof buttonProps>

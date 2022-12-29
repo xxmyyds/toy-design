@@ -1,6 +1,15 @@
 @use './bem/mixins.scss' as *;
 
-@include b(icon) {
+@keyframes rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@include b('icon') {
   height: 1em;
   width: 1em;
   line-height: 1em;
@@ -14,5 +23,9 @@
   svg {
     height: 1em;
     width: 1em;
+  }
+
+  @include when(loading) {
+    animation: rotating 2s linear infinite;
   }
 }

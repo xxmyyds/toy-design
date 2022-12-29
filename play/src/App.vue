@@ -57,18 +57,14 @@
   <toy-button type="primary" :icon="ToyIconAdd" circle />
   <toy-button type="success" size="small" :icon="ToyIconIosMinus" circle />
   <toy-button type="danger" size="large" :icon="ToyIconIosPlus" circle />
-  <toy-button circle>
-    <toy-icon>
-      <toy-icon-add />
-    </toy-icon>
-  </toy-button>
+  <toy-button :icon="ToyIconLoading"> xxmyyds </toy-button>
 
-  <toy-icon :icon="ToyIconAdd"> </toy-icon>
+  <toy-button loading>loading</toy-button>
 
   <br />
   按钮组
   <toy-button-group size="mini" type="primary">
-    <toy-button :icon="ToyIconAdd" />
+    <toy-button :icon="ToyIconAdd">xxmyyds</toy-button>
     <toy-button :icon="ToyIconIosMinus" />
     <toy-button type="danger" :icon="ToyIconIosPlus" />
   </toy-button-group>
@@ -80,6 +76,7 @@ import {
   ToyIconAdd,
   ToyIconIosMinus,
   ToyIconIosPlus,
+  ToyIconLoading,
 } from 'toy-design/toy-icon'
 
 const btn = ref(null)

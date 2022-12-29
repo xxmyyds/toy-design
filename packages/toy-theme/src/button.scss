@@ -3,13 +3,14 @@
 @use './bem/mixins.scss' as *;
 @use './common/genVar.scss' as *;
 @use './common/var.scss' as *;
+@use './common/config.scss' as *;
 
 @include b('button') {
   @include set-component-css-var('button', map.get($button, 'default', 'base'));
 }
 
 @include b('button') {
-  display: inline-block;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   line-height: 1;
@@ -48,6 +49,15 @@
 
   & + & {
     margin-left: 12px;
+  }
+
+  & [class*='#{$namespace}-icon'] {
+    & + span {
+      margin-left: 6px;
+    }
+    svg {
+      vertical-align: bottom;
+    }
   }
 
   @include when(disabled) {

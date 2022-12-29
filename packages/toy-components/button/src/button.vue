@@ -13,7 +13,10 @@
     :disabled="disabled"
     :aria-disabled="disabled"
   >
-    <toy-icon v-if="icon || $slots.icon">
+    <template v-if="loading">
+      <!-- <toy-icon :icon="ToyIconLoading"> </toy-icon> -->
+    </template>
+    <toy-icon v-else-if="icon || $slots.icon">
       <component :is="icon" v-if="icon" />
       <slot v-else name="icon" />
     </toy-icon>
@@ -25,6 +28,7 @@
 
 <script setup lang="ts">
 import { useNamespace } from '@toy-design/toy-tools'
+// import { ToyIconLoading } from '@toy-design/toy-icon'
 import { useButton } from '../hooks/use-button'
 import ToyIcon from '../../icon/src/icon.vue'
 import { buttonProps } from './button'
