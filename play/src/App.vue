@@ -77,7 +77,7 @@ import {
   ToyIconIosMinus,
   ToyIconIosPlus,
   ToyIconLoading,
-} from 'toy-design/toy-icon'
+} from '@xxm7/toy-icon'
 
 const btn = ref(null)
 

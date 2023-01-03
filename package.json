@@ -15,11 +15,9 @@
   "main": "index.js",
   "scripts": {
     "publish:npm": "sh ./scripts/publish.sh",
-    "publish-icon:npm": "sh ./scripts/publish-icon.sh",
     "clean": "rimraf dist",
-    "build": "pnpm clean && pnpm build:css && pnpm build:icon && vite build",
+    "build": "pnpm clean && pnpm build:css && vite build",
     "build:css": "vite build --config vite.config.css.ts",
-    "build:icon": "vite build --config vite.config.icon.ts",
     "release": "bumpp ./packages/toy-design/package.json",
     "commit": "git cz",
     "prepare": "husky install",
@@ -33,6 +31,7 @@
     "*.{vue,js,ts,jsx,tsx,md,json}": "eslint --fix"
   },
   "dependencies": {
+    "@xxm7/toy-icon": "^0.0.2",
     "vue": "^3.2.41"
   },
   "devDependencies": {
