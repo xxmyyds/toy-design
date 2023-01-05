@@ -45,7 +45,7 @@ export default defineConfig({
       name: 'ToyDesign',
     },
     rollupOptions: {
-      external: ['vue'],
+      external: ['vue', '@xxm7/toy-icon'],
       input: resolve(__dirname, 'packages/toy-design/index.ts'),
       output: [
         {

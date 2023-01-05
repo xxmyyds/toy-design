@@ -1,8 +1,15 @@
-import type { Component, PropType, VNode } from 'vue'
+import type { Component, PropType } from 'vue'
+
+export const definePropType = <T>(val: any): PropType<T> => val
+
+export const iconPropType = definePropType<string | Component>([
+  String,
+  Object,
+  Function,
+])
 
 export const props = {
   icon: {
-    type: Object as PropType<VNode | Component>,
-    default: (): null => null,
+    type: iconPropType,
   },
 }

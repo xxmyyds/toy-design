@@ -59,7 +59,7 @@
   <toy-button type="danger" size="large" :icon="ToyIconIosPlus" circle />
   <toy-button :icon="ToyIconLoading"> xxmyyds </toy-button>
 
-  <toy-button loading>loading</toy-button>
+  <toy-button type="primary" loading>loading</toy-button>
 
   <br />
   按钮组

@@ -5,6 +5,7 @@
       ns.m(_type),
       ns.m(_size),
       ns.is('disabled', disabled),
+      ns.is('loading', loading),
       ns.is('plain', plain),
       ns.is('round', round),
       ns.is('circle', circle),
@@ -14,7 +15,7 @@
     :aria-disabled="disabled"
   >
     <template v-if="loading">
-      <!-- <toy-icon :icon="ToyIconLoading"> </toy-icon> -->
+      <toy-icon :class="ns.is('loading')" :icon="ToyIconLoading" />
     </template>
     <toy-icon v-else-if="icon || $slots.icon">
       <component :is="icon" v-if="icon" />
@@ -28,10 +29,11 @@
 
 <script setup lang="ts">
 import { useNamespace } from '@toy-design/toy-tools'
-// import { ToyIconLoading } from '@toy-design/toy-icon'
+import { ToyIconLoading } from '@xxm7/toy-icon'
 import { useButton } from '../hooks/use-button'
 import ToyIcon from '../../icon/src/icon.vue'
 import { buttonProps } from './button'
+
 defineOptions({
   name: 'ToyButton',
 })
