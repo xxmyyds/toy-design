@@ -55,8 +55,8 @@
   </div>
   Icon
   <toy-button type="primary" :icon="ToyIconAdd" circle />
-  <toy-button type="success" size="small" :icon="ToyIconIosMinus" circle />
-  <toy-button type="danger" size="large" :icon="ToyIconIosPlus" circle />
+  <toy-button type="success" size="small" :icon="ToyIconIosRemove" circle />
+  <toy-button type="danger" size="large" :icon="ToyIconFavorite" circle />
   <toy-button :icon="ToyIconLoading"> xxmyyds </toy-button>
 
   <toy-button type="primary" loading>loading</toy-button>
@@ -65,8 +65,8 @@
   按钮组
   <toy-button-group size="mini" type="primary">
     <toy-button :icon="ToyIconAdd">xxmyyds</toy-button>
-    <toy-button :icon="ToyIconIosMinus" />
-    <toy-button type="danger" :icon="ToyIconIosPlus" />
+    <toy-button :icon="ToyIconIosRemove" />
+    <toy-button type="danger" :icon="ToyIconAlbums" />
   </toy-button-group>
 </template>
 
@@ -74,8 +74,9 @@
 import { nextTick, onMounted, ref } from 'vue'
 import {
   ToyIconAdd,
-  ToyIconIosMinus,
-  ToyIconIosPlus,
+  ToyIconAlbums,
+  ToyIconFavorite,
+  ToyIconIosRemove,
   ToyIconLoading,
 } from '@xxm7/toy-icon'
 

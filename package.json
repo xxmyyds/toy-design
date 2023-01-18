@@ -31,7 +31,7 @@
     "*.{vue,js,ts,jsx,tsx,md,json}": "eslint --fix"
   },
   "dependencies": {
-    "@xxm7/toy-icon": "^0.0.2",
+    "@xxm7/toy-icon": "^0.1.0",
     "vue": "^3.2.41"
   },
   "devDependencies": {

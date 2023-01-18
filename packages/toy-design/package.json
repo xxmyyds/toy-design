@@ -25,7 +25,6 @@
   "types": "types/toy-design/index.d.ts",
   "dependencies": {
     "@toy-design/toy-components": "workspace:*",
-    "@toy-design/toy-icon": "workspace:*",
     "@toy-design/toy-tools": "workspace:*"
   },
   "bugs": {

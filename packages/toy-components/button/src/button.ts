@@ -1,4 +1,5 @@
 import type { Component, ExtractPropTypes, PropType } from 'vue'
+import { ToyIconLoading } from '@xxm7/toy-icon'
 import type Button from './button.vue'
 
 export const definePropType = <T>(val: any): PropType<T> => val
@@ -27,6 +28,10 @@ export const buttonProps = {
   },
   icon: {
     type: iconPropType,
+  },
+  loadingIcon: {
+    type: iconPropType,
+    default: () => ToyIconLoading as any,
   },
   loading: Boolean,
 } as const

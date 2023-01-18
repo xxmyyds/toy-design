@@ -15,7 +15,9 @@
     :aria-disabled="disabled"
   >
     <template v-if="loading">
-      <toy-icon :class="ns.is('loading')" :icon="ToyIconLoading" />
+      <toy-icon :class="ns.is('loading')">
+        <component :is="loadingIcon"></component>
+      </toy-icon>
     </template>
     <toy-icon v-else-if="icon || $slots.icon">
       <component :is="icon" v-if="icon" />
@@ -29,7 +31,6 @@
 
 <script setup lang="ts">
 import { useNamespace } from '@toy-design/toy-tools'
-import { ToyIconLoading } from '@xxm7/toy-icon'
 import { useButton } from '../hooks/use-button'
 import ToyIcon from '../../icon/src/icon.vue'
 import { buttonProps } from './button'
