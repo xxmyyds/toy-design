@@ -5,7 +5,7 @@
 
 ## 基本使用
 
-可以使用`type`、`plain` 属性配置不同的按钮类型，展示不同的颜色状态
+可以使用`type`、`plain`、`round`、`circle` 属性配置不同的按钮类型，展示不同的颜色状态
 
 ::: demo
 <template #example>
@@ -195,5 +195,21 @@
 <toy-button circle size="small">xx</toy-button>
 <toy-button circle>xx</toy-button>
 <toy-button circle size="large">xx</toy-button>
+```
+:::
+## 加载按钮
+
+可以使用`loading`属性来控制按钮是否开启加载状态
+::: demo
+<template #example>
+<toy-button type="primary" size="small" loading>loading</toy-button>
+<toy-button type="primary" loading>loading</toy-button>
+<toy-button type="primary" size="large" loading>loading</toy-button>
+</template>
+
+```html
+<toy-button type="primary" size="small" loading>loading</toy-button>
+<toy-button type="primary" loading>loading</toy-button>
+<toy-button type="primary" size="large" loading>loading</toy-button>
 ```
 :::
