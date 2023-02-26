@@ -68,6 +68,9 @@
     <toy-button :icon="ToyIconIosRemove" />
     <toy-button type="danger" :icon="ToyIconAlbums" />
   </toy-button-group>
+
+  输入框
+  <toy-input placeholder="please input"></toy-input>
 </template>
 
 <script setup lang="ts">
