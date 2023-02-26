@@ -1,11 +1,15 @@
 <template>
-  <div :class="[ns.b(), ns.is('focus', focused)]">
+  <div :class="[ns.b(), ns.is('focus', focused), ns.is('disabled', disabled)]">
     <input
       :class="ns.e('inner')"
       :type="type"
+      :value="modelValue"
       :placeholder="placeholder"
+      :disabled="disabled"
       @focus="handleFocus"
       @blur="handleBlur"
+      @input="handleInput"
+      @change="handleChange"
     />
   </div>
 </template>
@@ -33,7 +37,15 @@ const handleBlur = (event: FocusEvent) => {
   emit('blur', event)
 }
 
-const ns = useNamespace('input')
+const handleInput = (event: Event) => {
+  const { value } = event.target as any
+  emit('update:modelValue', value)
+  emit('input', value)
+}
 
-// import {} from 'vue'
+const handleChange = (event: Event) => {
+  emit('change', (event.target as any).value)
+}
+
+const ns = useNamespace('input')
 </script>

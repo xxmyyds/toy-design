@@ -35,6 +35,19 @@
     background: none;
     font-size: inherit;
   }
+
+  @include when('disabled') {
+    cursor: not-allowed;
+    background-color: #f5f7fa;
+    box-shadow: 0 0 0 1px #e4e7ed inset;
+    .#{$namespace}-input__inner {
+      cursor: not-allowed;
+      &::placeholder {
+        color: #a8abb2;
+      }
+    }
+  }
+
   @include when('focus') {
     box-shadow: rgba(65, 158, 255) 0 0 0 1px inset;
   }

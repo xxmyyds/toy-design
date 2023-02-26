@@ -1,6 +1,7 @@
 {
   "extends": "@xxm7/eslint-config-vue",
   "rules": {
-    "space-before-function-paren": "off"
+    "space-before-function-paren": "off",
+    "quote-props": "off"
   }
 }

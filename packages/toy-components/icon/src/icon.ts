@@ -1,6 +1,5 @@
-import type { Component, PropType } from 'vue'
-
-export const definePropType = <T>(val: any): PropType<T> => val
+import { definePropType } from '@toy-design/toy-tools/hooks/use-props'
+import type { Component } from 'vue'
 
 export const iconPropType = definePropType<string | Component>([
   String,

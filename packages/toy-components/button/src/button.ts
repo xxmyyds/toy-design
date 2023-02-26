@@ -1,8 +1,7 @@
-import type { Component, ExtractPropTypes, PropType } from 'vue'
+import type { Component, ExtractPropTypes } from 'vue'
 import { ToyIconLoading } from '@xxm7/toy-icon'
+import { definePropType } from '@toy-design/toy-tools/hooks/use-props'
 import type Button from './button.vue'
-
-export const definePropType = <T>(val: any): PropType<T> => val
 
 export const iconPropType = definePropType<string | Component>([
   String,

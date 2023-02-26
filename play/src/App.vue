@@ -70,7 +70,18 @@
   </toy-button-group>
 
   输入框
-  <toy-input placeholder="please input"></toy-input>
+  <toy-input style="width: 200px" placeholder="please input"></toy-input>
+  <toy-input
+    style="width: 200px"
+    disabled
+    placeholder="please input"
+  ></toy-input>
+
+  <toy-input
+    v-model="value"
+    style="width: 200px"
+    placeholder="please input"
+  ></toy-input>
 </template>
 
 <script setup lang="ts">
@@ -84,6 +95,8 @@ import {
 } from '@xxm7/toy-icon'
 
 const btn = ref(null)
+
+const value = ref('')
 
 onMounted(() => {
   console.log(btn.value)
